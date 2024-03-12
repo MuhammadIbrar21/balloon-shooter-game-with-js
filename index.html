@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Baloon Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="gameContainer">
+      <div class="game-container-top">
+        <div class="score">
+          score : &nbsp;
+          <div id="scoreBox">0</div>
+        </div>
+        <div class="totalChances">
+          Total chances : &nbsp;
+          <div id="totalChances"></div>
+        </div>
+        <div class="chance">
+          chances Left : &nbsp;
+          <div id="chanceBox"></div>
+        </div>
+      </div>
+
+      <div id="game-menu">
+        <ul id="menu">
+          <li id="gameStart">Start Game</li>
+          <li id="defficultyLevel">
+            Difficulty Level
+            <span class="tooltiptext">
+              <p>Easy</p>
+              <p>Medium</p>
+              <p>Hard</p>
+            </span>
+          </li>
+          <li id="quitGame">Quit Game</li>
+        </ul>
+      </div>
+
+      <div id="difficulty-level-menu">
+        <ul id="menu">
+          <li id="easy">Easy</li>
+          <li id="medium">Medium</li>
+          <li id="hard">Hard</li>
+        </ul>
+      </div>
+
+      <div id="gameWinScreen">
+        <img src="./assets/images/playAgainButton.png" id="restartBtn" alt="" />
+        <div id="main-menu" class="main-menu">Main Menu</div>
+      </div>
+
+      <div id="gameOverScreen">
+        <img
+          src="./assets/images/playAgainButton.png"
+          id="playAgainBtn"
+          alt=""
+        />
+        <div id="main-menu2" class="main-menu">Main Menu</div>
+      </div>
+
+      <div id="quitScreen">
+        <h3>Tap To Start</h3>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
